@@ -1,0 +1,48 @@
+﻿<Window x:Class="wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:wpf.ViewModels"
+        d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel, IsDesignTimeCreatable=False}"
+        xmlns:local="clr-namespace:wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Menu IsMainMenu="True" DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Import">
+                        <MenuItem Header="From File"></MenuItem>
+                    </MenuItem>
+                </MenuItem>
+                
+                <MenuItem Header="_View">
+                    <MenuItem Header="_Windows">
+                        <MenuItem Header="_Command" IsCheckable="True"></MenuItem>
+                        <MenuItem Header="_History" IsCheckable="True"></MenuItem>
+                        <MenuItem Header="_Log" IsCheckable="True"></MenuItem>
+                    </MenuItem>    
+                </MenuItem>
+                
+                <MenuItem Header="_Help">
+                    <MenuItem Header="_About"></MenuItem>
+                </MenuItem>
+            </Menu>
+            
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock Text="Grid Size: " />
+                </StatusBarItem>
+                
+                <StatusBarItem>
+                    <TextBlock Text="{Binding SideLength}" />
+                </StatusBarItem>
+            </StatusBar>
+            
+            <Grid x:Name="grdGame" ShowGridLines="True">
+                
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

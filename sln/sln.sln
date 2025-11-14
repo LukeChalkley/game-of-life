@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib", "lib\lib.csproj", "{8693BC83-3FCA-4784-9DE0-28858DC8D210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf", "wpf\wpf.csproj", "{8CD07B95-9D8D-48BA-AE1D-BD671B15285E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8693BC83-3FCA-4784-9DE0-28858DC8D210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8693BC83-3FCA-4784-9DE0-28858DC8D210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8693BC83-3FCA-4784-9DE0-28858DC8D210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8693BC83-3FCA-4784-9DE0-28858DC8D210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD07B95-9D8D-48BA-AE1D-BD671B15285E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD07B95-9D8D-48BA-AE1D-BD671B15285E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD07B95-9D8D-48BA-AE1D-BD671B15285E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD07B95-9D8D-48BA-AE1D-BD671B15285E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
